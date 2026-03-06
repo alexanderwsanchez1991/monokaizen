@@ -1,0 +1,23 @@
+{
+  "publisher": "AlexanderSanchez",
+  "name": "monokaizen",
+  "icon": "images/Icon.png",
+  "displayName": "Monokaizen",
+  "description": "Monokai-based semantic highlighting theme.",
+  "version": "0.0.8",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Monokaizen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokaizen-color-theme.json"
+      }
+    ]
+  }
+}
