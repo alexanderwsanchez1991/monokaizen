@@ -4,7 +4,7 @@
   "icon": "images/Icon.png",
   "displayName": "Monokaizen",
   "description": "Monokai-based semantic highlighting theme.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "engines": {
     "vscode": "^1.109.0"
   },

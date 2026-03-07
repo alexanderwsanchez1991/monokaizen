@@ -15,6 +15,7 @@
 		"editor.findMatchHighlightBackground": "#FF8F0055",
 		"editor.findMatchHighlightForeground": "#272822EE",
 		"editor.foreground": "#F8F8F1",
+		"editor.hoverHighlightBackground": "#FF8F0055",
 		"editor.lineHighlightBackground": "#3E3D31",
 		"editor.selectionBackground": "#48473C",
 		"editor.selectionHighlightBackground": "#48473CEE",
