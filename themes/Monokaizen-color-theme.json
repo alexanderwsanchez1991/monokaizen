@@ -27,7 +27,9 @@
 		"editorGroup.border": "#34352F",
 		"editorGroup.dropBackground": "#41433980",
 		"editorGroupHeader.tabsBackground": "#1E1F1C",
-		"editorGutter.modifiedBackground": "#94E400EE",
+		"editorGutter.addedBackground": "#94E40099",
+		"editorGutter.deletedBackground": "#94E40099",
+		"editorGutter.modifiedBackground": "#94E40099",
 		"editorHint.foreground": "#1CDBF2",
 		"editorHoverWidget.background": "#272822",
 		"editorHoverWidget.border": "#75705B",
@@ -41,12 +43,12 @@
 		"editorLineNumber.activeForeground": "#90918A",
 		"editorLineNumber.foreground": "#90918A",
 		"editorLink.activeForeground": "#1CDBF2",
-		"editorOverviewRuler.addedForeground": "#27282200",
-		"editorOverviewRuler.deletedForeground": "#27282200",
+		"editorOverviewRuler.addedForeground": "#94E40077",
+		"editorOverviewRuler.deletedForeground": "#94E40077",
 		"editorOverviewRuler.errorForeground": "#FF007177",
 		"editorOverviewRuler.findMatchForeground": "#FF8F0077",
 		"editorOverviewRuler.infoForeground": "#EADA6177",
-		"editorOverviewRuler.modifiedForeground": "#27282200",
+		"editorOverviewRuler.modifiedForeground": "#94E40077",
 		"editorOverviewRuler.selectionHighlightForeground": "#F8F8F144",
 		"editorOverviewRuler.warningForeground": "#EADA6177",
 		"editorRuler.foreground": "#48473C",
@@ -91,6 +93,9 @@
 		"minimap.selectionHighlight": "#F8F8F122",
 		"minimap.selectionOccurrenceHighlight": "#F8F8F122",
 		"minimap.warningHighlight": "#EADA6155",
+		"minimapGutter.addedBackground": "#94E40099",
+		"minimapGutter.deletedBackground": "#94E40099",
+		"minimapGutter.modifiedBackground": "#94E40099",
 		"panel.border": "#414339",
 		"panelTitle.activeBorder": "#75715E",
 		"panelTitle.activeForeground": "#F8F8F1",
@@ -188,7 +193,6 @@
 				"keyword.other.interpolation",
 				"meta",
 				"meta.block.hcl storage.type",
-				"meta.function-call.python meta.function-call.arguments.python support.type.python",
 				"punctuation.definition.variable",
 				"storage.type.format",
 				"storage.type.function.arrow",
@@ -293,7 +297,6 @@
 			"scope": [
 				"entity.name.function",
 				"meta.function-call.generic",
-				"meta.function-call.python support.type.python",
 				"meta.function.python support.variable.magic.python",
 				"support.function"
 			],
@@ -305,10 +308,12 @@
 		{
 			"scope": [
 				"storage.type.hcl",
+				"support.type.builtin.python",
 				"support.type.builtin.ts",
 				"support.type.builtin.tsx",
 				"support.type.primitive.ts",
-				"support.type.primitive.tsx"
+				"support.type.primitive.tsx",
+				"support.type.python"
 			],
 			"settings": {
 				"fontStyle": "italic",
