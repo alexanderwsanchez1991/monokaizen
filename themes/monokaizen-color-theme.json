@@ -510,6 +510,30 @@
       }
     },
     {
+      "name": "ruby.background",
+      "scope": [
+        "meta.type.signature.rbs",
+        "meta.type.signature.rbs comment",
+        "meta.type.signature.rbs constant",
+        "meta.type.signature.rbs entity.name.function",
+        "meta.type.signature.rbs entity.name.tag",
+        "meta.type.signature.rbs entity.name.type",
+        "meta.type.signature.rbs keyword",
+        "meta.type.signature.rbs keyword.operator",
+        "meta.type.signature.rbs meta",
+        "meta.type.signature.rbs storage",
+        "meta.type.signature.rbs string",
+        "meta.type.signature.rbs string.regexp",
+        "meta.type.signature.rbs support.function",
+        "meta.type.signature.rbs support.type",
+        "meta.type.signature.rbs variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
       "name": "shell.foreground",
       "scope": [
         "constant.language.false.shell",
