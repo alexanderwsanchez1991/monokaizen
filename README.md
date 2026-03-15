@@ -12,31 +12,30 @@ It also includes a matching terminal theme!
 
 ## Color Semantics
 
-- **White**: The main `foreground` color that applies to all basic token types such as variables, namespaces, and operators.
-- **Grey**: The `background` color for elements which serve to annotate the code, notably comments.
-- **Red**: For `reserved` language-specific elements like keywords and tags.
-- **Green**: For `toxic` mutators which execute functionality, notably functions.
-- **Purple**: For `epic` (so cool there is only one of them) elements of a language which are atomic, immutable, or self-referencing such as Integers, Booleans, Regular Expressions, and Atoms.
-- **Cyan**: For `blueprint` elements such as language primitives, and types.
-- **Yellow**: The `mellow` color, good for high-frequency token types such as quoted string values in all languages.
+- **White**: The main `foreground` color that applies to all basic tokens such as variables, namespaces, and operators.
+- **Grey**: The `background` color for tokens which serve to annotate code, notably comments.
+- **Red**: For `reserved` language-specific tokens like keywords and tags.
+- **Green**: For `toxic` tokens which can mutate or execute functionality, notably functions.
+- **Purple**: For `epic` (so cool there is only one of them) tokens of a language which are atomic, immutable, or self-referencing such as Integers, Booleans, Regular Expressions, and Atoms.
+- **Cyan**: For `blueprint` tokens which support typing in a language such as primitive types and composable type elements.
+- **Yellow**: The `mellow` color, good for high-frequency tokens such as quoted string values in all languages.
 
-## Tailored Languages
+## Tailored Language Extensions
 - css
 - erb
-- html
 - ini
-- javascript
+- js
 - json
 - jsonc
 - jsx
-- python
-- ruby
+- py
+- rb
 - scss
-- shellscript
-- terraform
-- terraform-vars
+- sh
+- tf
+- tfvars
+- ts
 - tsx
-- typescript
 - xml
 - yaml
 

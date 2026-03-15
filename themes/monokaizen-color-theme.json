@@ -137,10 +137,14 @@
     "statusBar.background": "#414339",
     "statusBar.debuggingBackground": "#75715E",
     "statusBar.noFolderBackground": "#414339",
+    "tab.activeBackground": "#272822",
+    "tab.activeForeground": "#CCCCCC",
     "tab.border": "#1E1F1C",
     "tab.inactiveBackground": "#34352F",
-    "tab.inactiveForeground": "#CCCCC7",
+    "tab.inactiveForeground": "#CCCCCC",
     "tab.lastPinnedBorder": "#414339",
+    "tab.unfocusedActiveBackground": "#34352F",
+    "tab.unfocusedActiveForeground": "#CCCCCC",
     "terminal.ansiBlack": "#272822",
     "terminal.ansiBlue": "#B47EFF",
     "terminal.ansiBrightBlack": "#75705B",
@@ -179,36 +183,10 @@
   "name": "Monokaizen",
   "tokenColors": [
     {
+      "name": "*.foreground",
       "scope": [
-        "constant.character.format",
-        "constant.language.false.shell",
-        "constant.language.import-export-all",
-        "constant.language.true.shell",
-        "constant.numeric.decimal.shell",
-        "constant.numeric.integer.shell",
-        "constant.other.caps",
-        "constant.other.ellipsis",
-        "constant.other.option",
-        "entity.name.tag.css",
-        "entity.name.tag.custom.css",
-        "entity.name.tag.reference.scss",
-        "entity.name.tag.wildcard.css",
-        "entity.name.tag.yaml",
         "keyword.operator",
-        "keyword.other.definition.ini",
-        "keyword.other.interpolation",
         "meta",
-        "punctuation.definition.variable",
-        "storage.type.format",
-        "storage.type.function.arrow",
-        "storage.type.function.hcl",
-        "storage.type.variable",
-        "string.interpolated.process-substitution.shell",
-        "string.regexp.unquoted.shell",
-        "string.unquoted.argument.shell",
-        "string.unquoted.shell",
-        "support.class.component",
-        "support.type.property-name.json",
         "variable"
       ],
       "settings": {
@@ -217,38 +195,9 @@
       }
     },
     {
+      "name": "*.background",
       "scope": [
-        "comment",
-        "comment.line.number-sign.python",
-        "comment.line.number-sign.python keyword",
-        "comment.line.number-sign.python meta",
-        "comment.line.triple-slash.directive.ts meta.tag.ts entity",
-        "comment.line.triple-slash.directive.ts meta.tag.ts entity.name.tag",
-        "comment.line.triple-slash.directive.ts meta.tag.ts keyword.operator",
-        "comment.line.triple-slash.directive.ts meta.tag.ts punctuation",
-        "comment.line.triple-slash.directive.ts meta.tag.ts string",
-        "entity.name.type.instance.jsdoc",
-        "meta.example.jsdoc",
-        "meta.function.decorator.python",
-        "meta.function.decorator.python entity.name.function",
-        "meta.function.decorator.python meta.function-call.arguments.python",
-        "meta.function.decorator.python meta.function-call.arguments.python constant",
-        "meta.function.decorator.python meta.function-call.arguments.python constant.character.format",
-        "meta.function.decorator.python meta.function-call.arguments.python keyword",
-        "meta.function.decorator.python meta.function-call.arguments.python keyword.operator",
-        "meta.function.decorator.python meta.function-call.arguments.python string",
-        "meta.function.decorator.python meta.function-call.arguments.python variable",
-        "meta.function.decorator.python support.type.python",
-        "meta.shebang",
-        "meta.type.signature.rbs",
-        "meta.type.signature.rbs constant",
-        "meta.type.signature.rbs variable",
-        "storage.type.class.jsdoc",
-        "string.quoted.docstring.multi.python",
-        "string.quoted.docstring.multi.python keyword",
-        "variable.other.description.jsdoc",
-        "variable.other.jsdoc",
-        "variable.other.link.underline.jsdoc"
+        "comment"
       ],
       "settings": {
         "fontStyle": "",
@@ -256,16 +205,11 @@
       }
     },
     {
+      "name": "*.reserved",
       "scope": [
         "entity.name.tag",
-        "entity.name.type.terraform",
         "keyword",
-        "keyword.operator.expression",
-        "keyword.operator.logical.python",
-        "keyword.operator.new",
-        "keyword.operator.word",
-        "storage.modifier",
-        "storage.type"
+        "storage"
       ],
       "settings": {
         "fontStyle": "",
@@ -273,13 +217,9 @@
       }
     },
     {
+      "name": "*.mellow",
       "scope": [
-        "keyword.control.heredoc",
-        "keyword.operator.heredoc",
-        "punctuation.definition.string.heredoc",
-        "storage.type.string",
-        "string",
-        "variable.other.enummember.hcl"
+        "string"
       ],
       "settings": {
         "fontStyle": "",
@@ -287,23 +227,10 @@
       }
     },
     {
+      "name": "*.epic",
       "scope": [
         "constant",
-        "keyword.control.anchor.regexp",
-        "keyword.operator.negation.regexp",
-        "keyword.operator.or.regexp",
-        "keyword.operator.quantifier.regexp",
-        "keyword.other.unit",
-        "meta.assertion.look-ahead.regexp",
-        "meta.group.assertion.regexp",
-        "meta.group.regexp",
-        "storage.type.number",
-        "string.regexp",
-        "string.regexp.js keyword",
-        "string.regexp.quoted.single.python keyword.operator",
-        "string.regexp.quoted.single.python storage.type.string",
-        "string.regexp.ts keyword",
-        "string.regexp.tsx keyword"
+        "string.regexp"
       ],
       "settings": {
         "fontStyle": "",
@@ -311,11 +238,9 @@
       }
     },
     {
+      "name": "*.toxic",
       "scope": [
         "entity.name.function",
-        "meta.function-call.generic",
-        "meta.function-call.python support.variable.magic.python",
-        "meta.function.python support.variable.magic.python",
         "support.function"
       ],
       "settings": {
@@ -324,16 +249,549 @@
       }
     },
     {
+      "name": "*.blueprint",
       "scope": [
-        "storage.type.hcl",
-        "support.type.builtin.ts",
-        "support.type.builtin.tsx",
-        "support.type.primitive.ts",
-        "support.type.primitive.tsx"
+        "entity.name.type",
+        "support.type"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "",
         "foreground": "#1CDBF2"
+      }
+    },
+    {
+      "name": "css.mellow",
+      "scope": [
+        "constant.other.color.rgb-value.hex.css",
+        "support.constant.property-value.css"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#EADA61"
+      }
+    },
+    {
+      "name": "css.epic",
+      "scope": [
+        "constant.numeric.css keyword.other.unit"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#B47EFF"
+      }
+    },
+    {
+      "name": "css.blueprint",
+      "scope": [
+        "entity.name.tag.css",
+        "entity.name.tag.wildcard.css",
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.pseudo-class.css"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#1CDBF2"
+      }
+    },
+    {
+      "name": "ini.foreground",
+      "scope": [
+        "keyword.other.definition.ini"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "js.foreground",
+      "scope": [
+        "storage.type.function.arrow.js",
+        "support.type.object.module.js"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "js.background",
+      "scope": [
+        "comment.block.documentation.js",
+        "comment.block.documentation.js comment",
+        "comment.block.documentation.js constant",
+        "comment.block.documentation.js entity.name.function",
+        "comment.block.documentation.js entity.name.tag",
+        "comment.block.documentation.js entity.name.type",
+        "comment.block.documentation.js keyword",
+        "comment.block.documentation.js keyword.operator",
+        "comment.block.documentation.js meta",
+        "comment.block.documentation.js storage",
+        "comment.block.documentation.js string",
+        "comment.block.documentation.js string.regexp",
+        "comment.block.documentation.js support.function",
+        "comment.block.documentation.js support.type",
+        "comment.block.documentation.js variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
+      "name": "json.foreground",
+      "scope": [
+        "support.type.property-name.json"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "python.foreground",
+      "scope": [
+        "constant.character.format.placeholder.other.python",
+        "constant.other.caps.python",
+        "constant.other.ellipsis.python",
+        "entity.name.type.class.python",
+        "storage.type.format.python",
+        "support.type.exception.python",
+        "support.type.metaclass.python"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "python.background",
+      "scope": [
+        "comment.line.number-sign.python",
+        "comment.line.number-sign.python comment",
+        "comment.line.number-sign.python constant",
+        "comment.line.number-sign.python entity.name.function",
+        "comment.line.number-sign.python entity.name.tag",
+        "comment.line.number-sign.python entity.name.type",
+        "comment.line.number-sign.python keyword",
+        "comment.line.number-sign.python keyword.operator",
+        "comment.line.number-sign.python meta",
+        "comment.line.number-sign.python storage",
+        "comment.line.number-sign.python string",
+        "comment.line.number-sign.python string.regexp",
+        "comment.line.number-sign.python support.function",
+        "comment.line.number-sign.python support.type",
+        "comment.line.number-sign.python support.type.python",
+        "comment.line.number-sign.python variable",
+        "entity.name.function.decorator.python",
+        "meta.function.decorator.python",
+        "meta.function.decorator.python comment",
+        "meta.function.decorator.python constant",
+        "meta.function.decorator.python entity.name.function",
+        "meta.function.decorator.python entity.name.tag",
+        "meta.function.decorator.python entity.name.type",
+        "meta.function.decorator.python keyword",
+        "meta.function.decorator.python keyword.operator",
+        "meta.function.decorator.python meta",
+        "meta.function.decorator.python meta.function-call.arguments.python",
+        "meta.function.decorator.python meta.function-call.arguments.python comment",
+        "meta.function.decorator.python meta.function-call.arguments.python constant",
+        "meta.function.decorator.python meta.function-call.arguments.python entity.name.function",
+        "meta.function.decorator.python meta.function-call.arguments.python entity.name.tag",
+        "meta.function.decorator.python meta.function-call.arguments.python entity.name.type",
+        "meta.function.decorator.python meta.function-call.arguments.python keyword",
+        "meta.function.decorator.python meta.function-call.arguments.python keyword.operator",
+        "meta.function.decorator.python meta.function-call.arguments.python meta",
+        "meta.function.decorator.python meta.function-call.arguments.python storage",
+        "meta.function.decorator.python meta.function-call.arguments.python string",
+        "meta.function.decorator.python meta.function-call.arguments.python string.regexp",
+        "meta.function.decorator.python meta.function-call.arguments.python support.function",
+        "meta.function.decorator.python meta.function-call.arguments.python support.type",
+        "meta.function.decorator.python meta.function-call.arguments.python support.type.python",
+        "meta.function.decorator.python meta.function-call.arguments.python variable",
+        "meta.function.decorator.python storage",
+        "meta.function.decorator.python string",
+        "meta.function.decorator.python string.regexp",
+        "meta.function.decorator.python support.function",
+        "meta.function.decorator.python support.type",
+        "meta.function.decorator.python support.type.python",
+        "meta.function.decorator.python variable",
+        "string.quoted.docstring.multi.python",
+        "string.quoted.docstring.multi.python comment",
+        "string.quoted.docstring.multi.python constant",
+        "string.quoted.docstring.multi.python entity.name.function",
+        "string.quoted.docstring.multi.python entity.name.tag",
+        "string.quoted.docstring.multi.python entity.name.type",
+        "string.quoted.docstring.multi.python keyword",
+        "string.quoted.docstring.multi.python keyword.operator",
+        "string.quoted.docstring.multi.python meta",
+        "string.quoted.docstring.multi.python storage",
+        "string.quoted.docstring.multi.python string",
+        "string.quoted.docstring.multi.python string.regexp",
+        "string.quoted.docstring.multi.python support.function",
+        "string.quoted.docstring.multi.python support.type",
+        "string.quoted.docstring.multi.python support.type.python",
+        "string.quoted.docstring.multi.python variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
+      "name": "python.reserved",
+      "scope": [
+        "keyword.operator.logical.python",
+        "support.variable.magic.python"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF0071"
+      }
+    },
+    {
+      "name": "python.mellow",
+      "scope": [
+        "string.quoted.binary.single.python storage.type.string.python",
+        "string.quoted.multi.python storage.type.string.python",
+        "string.quoted.single.python storage.type.string.python"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#EADA61"
+      }
+    },
+    {
+      "name": "python.epic",
+      "scope": [
+        "storage.type.number.python",
+        "string.regexp.quoted.single.python",
+        "string.regexp.quoted.single.python comment",
+        "string.regexp.quoted.single.python constant",
+        "string.regexp.quoted.single.python entity.name.function",
+        "string.regexp.quoted.single.python entity.name.tag",
+        "string.regexp.quoted.single.python entity.name.type",
+        "string.regexp.quoted.single.python keyword",
+        "string.regexp.quoted.single.python keyword.operator",
+        "string.regexp.quoted.single.python meta",
+        "string.regexp.quoted.single.python storage",
+        "string.regexp.quoted.single.python storage.type.string.python",
+        "string.regexp.quoted.single.python string",
+        "string.regexp.quoted.single.python string.regexp",
+        "string.regexp.quoted.single.python support.function",
+        "string.regexp.quoted.single.python support.type",
+        "string.regexp.quoted.single.python variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#B47EFF"
+      }
+    },
+    {
+      "name": "python.toxic",
+      "scope": [
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#94E400"
+      }
+    },
+    {
+      "name": "ruby.foreground",
+      "scope": [
+        "entity.name.type.class.ruby",
+        "entity.name.type.module.ruby",
+        "storage.type.variable.ruby"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "shell.foreground",
+      "scope": [
+        "constant.language.false.shell",
+        "constant.language.true.shell",
+        "constant.numeric.decimal.shell",
+        "constant.numeric.integer.shell",
+        "punctuation.definition.variable.shell",
+        "string.interpolated.process-substitution.shell",
+        "string.regexp.unquoted.shell",
+        "string.unquoted.argument constant.other.option",
+        "string.unquoted.argument.shell",
+        "string.unquoted.shell"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "shell.background",
+      "scope": [
+        "meta.shebang.shell"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
+      "name": "shell.mellow",
+      "scope": [
+        "keyword.operator.heredoc.shell",
+        "punctuation.definition.string.heredoc.delimiter.shell"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#EADA61"
+      }
+    },
+    {
+      "name": "terraform.foreground",
+      "scope": [
+        "entity.name.type.hcl",
+        "keyword.other.interpolation.begin.hcl",
+        "keyword.other.interpolation.end.hcl"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "terraform.reserved",
+      "scope": [
+        "entity.name.type.terraform",
+        "keyword.operator.word.hcl"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF0071"
+      }
+    },
+    {
+      "name": "terraform.mellow",
+      "scope": [
+        "keyword.control.heredoc.hcl",
+        "keyword.operator.heredoc.hcl",
+        "variable.other.enummember.hcl"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#EADA61"
+      }
+    },
+    {
+      "name": "terraform.blueprint",
+      "scope": [
+        "storage.type.hcl"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#1CDBF2"
+      }
+    },
+    {
+      "name": "ts.foreground",
+      "scope": [
+        "constant.language.import-export-all.ts",
+        "entity.name.type.class.ts",
+        "entity.name.type.module.ts",
+        "meta.class.ts entity.other.inherited-class.ts",
+        "storage.type.function.arrow.ts"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "ts.background",
+      "scope": [
+        "comment.block.documentation.ts",
+        "comment.block.documentation.ts comment",
+        "comment.block.documentation.ts constant",
+        "comment.block.documentation.ts entity.name.function",
+        "comment.block.documentation.ts entity.name.tag",
+        "comment.block.documentation.ts entity.name.type",
+        "comment.block.documentation.ts keyword",
+        "comment.block.documentation.ts keyword.operator",
+        "comment.block.documentation.ts meta",
+        "comment.block.documentation.ts storage",
+        "comment.block.documentation.ts string",
+        "comment.block.documentation.ts string.regexp",
+        "comment.block.documentation.ts support.function",
+        "comment.block.documentation.ts support.type",
+        "comment.block.documentation.ts variable",
+        "meta.tag.ts",
+        "meta.tag.ts comment",
+        "meta.tag.ts constant",
+        "meta.tag.ts entity.name.function",
+        "meta.tag.ts entity.name.tag",
+        "meta.tag.ts entity.name.type",
+        "meta.tag.ts keyword",
+        "meta.tag.ts keyword.operator",
+        "meta.tag.ts meta",
+        "meta.tag.ts storage",
+        "meta.tag.ts string",
+        "meta.tag.ts string.regexp",
+        "meta.tag.ts support.function",
+        "meta.tag.ts support.type",
+        "meta.tag.ts variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
+      "name": "ts.reserved",
+      "scope": [
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.infer.ts",
+        "keyword.operator.expression.instanceof.ts",
+        "keyword.operator.expression.keyof.ts",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.new.ts"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF0071"
+      }
+    },
+    {
+      "name": "ts.epic",
+      "scope": [
+        "string.regexp.ts",
+        "string.regexp.ts comment",
+        "string.regexp.ts constant",
+        "string.regexp.ts entity.name.function",
+        "string.regexp.ts entity.name.tag",
+        "string.regexp.ts entity.name.type",
+        "string.regexp.ts keyword",
+        "string.regexp.ts keyword.operator",
+        "string.regexp.ts meta",
+        "string.regexp.ts storage",
+        "string.regexp.ts string",
+        "string.regexp.ts string.regexp",
+        "string.regexp.ts support.function",
+        "string.regexp.ts support.type",
+        "string.regexp.ts variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#B47EFF"
+      }
+    },
+    {
+      "name": "ts.blueprint",
+      "scope": [
+        "entity.other.inherited-class.ts"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#1CDBF2"
+      }
+    },
+    {
+      "name": "tsx.foreground",
+      "scope": [
+        "constant.language.import-export-all.tsx",
+        "entity.name.type.class.tsx",
+        "entity.name.type.module.tsx",
+        "meta.class.tsx entity.other.inherited-class.tsx",
+        "storage.type.function.arrow.tsx",
+        "support.class.component.tsx"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
+      }
+    },
+    {
+      "name": "tsx.background",
+      "scope": [
+        "comment.block.documentation.tsx",
+        "comment.block.documentation.tsx comment",
+        "comment.block.documentation.tsx constant",
+        "comment.block.documentation.tsx entity.name.function",
+        "comment.block.documentation.tsx entity.name.tag",
+        "comment.block.documentation.tsx entity.name.type",
+        "comment.block.documentation.tsx keyword",
+        "comment.block.documentation.tsx keyword.operator",
+        "comment.block.documentation.tsx meta",
+        "comment.block.documentation.tsx storage",
+        "comment.block.documentation.tsx string",
+        "comment.block.documentation.tsx string.regexp",
+        "comment.block.documentation.tsx support.function",
+        "comment.block.documentation.tsx support.type",
+        "comment.block.documentation.tsx variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#75705B"
+      }
+    },
+    {
+      "name": "tsx.reserved",
+      "scope": [
+        "keyword.operator.expression.in.tsx",
+        "keyword.operator.expression.infer.tsx",
+        "keyword.operator.expression.instanceof.tsx",
+        "keyword.operator.expression.keyof.tsx",
+        "keyword.operator.expression.typeof.tsx",
+        "keyword.operator.new.tsx"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF0071"
+      }
+    },
+    {
+      "name": "tsx.epic",
+      "scope": [
+        "string.regexp.tsx",
+        "string.regexp.tsx comment",
+        "string.regexp.tsx constant",
+        "string.regexp.tsx entity.name.function",
+        "string.regexp.tsx entity.name.tag",
+        "string.regexp.tsx entity.name.type",
+        "string.regexp.tsx keyword",
+        "string.regexp.tsx keyword.operator",
+        "string.regexp.tsx meta",
+        "string.regexp.tsx storage",
+        "string.regexp.tsx string",
+        "string.regexp.tsx string.regexp",
+        "string.regexp.tsx support.function",
+        "string.regexp.tsx support.type",
+        "string.regexp.tsx variable"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#B47EFF"
+      }
+    },
+    {
+      "name": "tsx.blueprint",
+      "scope": [
+        "entity.other.inherited-class.tsx"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#1CDBF2"
+      }
+    },
+    {
+      "name": "yaml.foreground",
+      "scope": [
+        "entity.name.tag.yaml"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#F8F8F1"
       }
     }
   ],
