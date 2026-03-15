@@ -23,6 +23,7 @@ It also includes a matching terminal theme!
 ## Tailored Language Extensions
 - css
 - erb
+- html
 - ini
 - js
 - json
