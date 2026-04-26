@@ -1,0 +1,28 @@
+{
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "Monokaizen",
+        "label": "Monokaizen",
+        "path": "./themes/monokaizen-color-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "description": "A minimalist semantic dark theme inspired by 'Monokai Classic'.",
+  "displayName": "Monokaizen",
+  "engines": {
+    "vscode": "*"
+  },
+  "icon": "images/Icon.png",
+  "name": "monokaizen",
+  "publisher": "AlexanderSanchez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexanderwsanchez1991/Monokaizen"
+  },
+  "version": "1.1.11"
+}
