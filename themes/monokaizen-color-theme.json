@@ -270,7 +270,7 @@
     "inputValidation.errorBorder": "#57584F",
     "inputValidation.errorForeground": "#C0C1B5",
     "inputValidation.infoBackground": "#373831",
-    "inputValidation.infoBorder": "#57584F",
+    "inputValidation.infoBorder": "#373831",
     "inputValidation.infoForeground": "#C0C1B5",
     "inputValidation.warningBackground": "#373831",
     "inputValidation.warningBorder": "#57584F",
